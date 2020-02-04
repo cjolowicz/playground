@@ -1,0 +1,9 @@
+name: Release Published
+on:
+  release:
+    types: [published]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Release published"
