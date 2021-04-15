@@ -9,3 +9,5 @@ jobs:
         run: |
           from pathlib import Path
           print(Path("relative").resolve())
+          import pathlib
+          print(pathlib._getfinalpathname)
