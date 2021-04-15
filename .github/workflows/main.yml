@@ -4,7 +4,7 @@ jobs:
   tests:
     runs-on: windows-latest
     steps:
-      - uses: actions/setup-python
+      - uses: actions/setup-python@latest
       - shell: python
         run: |
           from pathlib import Path
