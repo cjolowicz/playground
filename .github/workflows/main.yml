@@ -7,7 +7,5 @@ jobs:
       - uses: actions/setup-python@v2
       - shell: python
         run: |
-          from pathlib import Path
-          print(Path("relative").resolve())
           import pathlib
-          print(pathlib._getfinalpathname)
+          print(pathlib._getfinalpathname("relative"))
